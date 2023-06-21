@@ -16,14 +16,12 @@ public class SearchingChallenge {
         int[][] matrix = new int[rows][cols];
         int holes = 0;
 
-        // Convert the string array into a 2D matrix of integers
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 matrix[i][j] = Character.getNumericValue(strArr[i].charAt(j));
             }
         }
 
-        // Use depth-first search to find contiguous regions of 0's
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (matrix[i][j] == 0) {
@@ -40,19 +38,17 @@ public class SearchingChallenge {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        // Check if the current position is valid and a part of a contiguous region
         if (row < 0 || row >= rows || col < 0 || col >= cols || matrix[row][col] != 0) {
             return;
         }
 
-        // Mark the current position as visited
+       
         matrix[row][col] = -1;
 
-        // Recursively search in all four directions
-        dfs(matrix, row - 1, col); // Up
-        dfs(matrix, row + 1, col); // Down
-        dfs(matrix, row, col - 1); // Left
-        dfs(matrix, row, col + 1); // Right
+        dfs(matrix, row - 1, col); 
+        dfs(matrix, row + 1, col); 
+        dfs(matrix, row, col - 1); 
+        dfs(matrix, row, col + 1); 
     }
 }
 
