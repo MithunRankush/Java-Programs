@@ -39,19 +39,17 @@ class MaxUniqueChar {
   }
 
   public static void main(String[] args) {
-//    String input = "mmmerme";
-    
+
     String input1 = "ahyjakh";
     String input2 = "ghececgkaem";
     String input3 = "mmmerme";
     String input4 = "abccdefghi";
 
-    System.out.println(StringChallenge(input1)); // Output: 4
-    System.out.println(StringChallenge(input2)); // Output: 5
-    System.out.println(StringChallenge(input3)); // Output: 3
-    System.out.println(StringChallenge(input4)); // Output: 0
-//    int output = StringChallenge(input);
-//    System.out.println(output);
+    System.out.println(StringChallenge(input1)); 
+    System.out.println(StringChallenge(input2)); 
+    System.out.println(StringChallenge(input3)); 
+    System.out.println(StringChallenge(input4)); 
+
   }
 }
 
