@@ -6,22 +6,22 @@ public class MEXEquality {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" enter");
-        int t = scanner.nextInt(); // number of test cases
+        int t = scanner.nextInt(); 
 
         System.out.println(" enter");
         for (int i = 0; i < t; i++) {
-            int k = scanner.nextInt(); // number of arrays
+            int k = scanner.nextInt();
 
             List<List<Integer>> arrays = new ArrayList<>();
 
             System.out.println(" enter");
             for (int j = 0; j < k; j++) {
-                int n = scanner.nextInt(); // size of the array
+                int n = scanner.nextInt(); 
                 List<Integer> array = new ArrayList<>();
 
                 System.out.println(" enter");
                 for (int m = 0; m < n; m++) {
-                    array.add(scanner.nextInt()); // elements of the array
+                    array.add(scanner.nextInt()); 
                 }
 
                 arrays.add(array);
