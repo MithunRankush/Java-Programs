@@ -25,10 +25,10 @@ public class StringChallenge {
 	        String input3 = "mmmerme";
 	        String input4 = "abccdefghi";
 
-	        System.out.println(StringChallenge(input1)); // Output: 4
-	        System.out.println(StringChallenge(input2)); // Output: 5
-	        System.out.println(StringChallenge(input3)); // Output: 3
-	        System.out.println(StringChallenge(input4)); // Output: 0
+	        System.out.println(StringChallenge(input1)); 
+	        System.out.println(StringChallenge(input2)); 
+	        System.out.println(StringChallenge(input3)); 
+	        System.out.println(StringChallenge(input4)); 
 	    }
 
 
